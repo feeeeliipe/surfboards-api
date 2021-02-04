@@ -1,6 +1,6 @@
 # Surfboard API
 
-## Tecnoligias Utilizadas
+## Tecnologias Utilizadas
 
 - NodeJS
 - TypeScript
