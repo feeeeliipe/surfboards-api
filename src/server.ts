@@ -11,7 +11,6 @@ import Logger from "./utils/Logger";
 
 export class ExpressServer {
   PORT: Number = 3000;
-  MONGODB_INMEMORY_URL: String = "";
   logger: Logger;
 
   constructor(protected app: Application = express()) {
@@ -38,10 +37,6 @@ export class ExpressServer {
     this.logger.info("Loading and validating enviroment variables");
     dotenv.config();
     this.PORT = envvar.get("PORT").asInt() || 3000;
-    this.MONGODB_INMEMORY_URL = envvar
-      .get("MONGODB_INMEMORY_URL")
-      .required()
-      .asString();
     envvar.get("JWT_SECRET").required().asString();
   }
 
