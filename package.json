@@ -6,6 +6,7 @@
   "scripts": {
     "build": "tsc",
     "start": "ts-node-dev src/index.ts",
+    "start:prod": "node dist/src/index.js",
     "prod": "npm run build && node dist/src/index.js",
     "test:unit": "npx jest --detectOpenHandles"
   },

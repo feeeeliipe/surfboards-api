@@ -8,19 +8,26 @@
 - Joi (Validação de dados)
 - MongoDB (Em memória)
 - Jest (Testes)
+- Docker
 
-## Instalando dependências
+## Rodando a aplicação com Docker
+
+Para executar a aplicação utilizando Docker, execute na pasta raiz do projeto `docker-compose up`
+
+## Rodando a aplicação localmente
+
+### Instalando dependências
 
 Para instalar as dependencias do projeto, execute o comando `npm install` na pasta raiz do projeto.
 
-## Variáveis de ambiente
+### Variáveis de ambiente
 
 Para executar o projeto, configure as seguintes variáveis de ambiente no arquivo .env
 
 - PORT=3001 (Opcional) - Caso não configurada, será assumido o valor padrão 3000
 - JWT_SECRET=chavesecretajwt (Obrigatória)
 
-## Executando o projeto localmente
+### Executando o projeto localmente
 
 Para executar o projeto localmente, execute o comando `npm start` na pasta raiz do projeto.
 
